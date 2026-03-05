@@ -16,10 +16,10 @@ function btnfn() {
 }
 
 const productsLine1 = [
-  { name: "shirt With double tap", price: 1400, rating: 4.5, img: "/Assets/images/shirt1.png" },
-  { name: "shirt with blackcolor", price: 1420, rating: 4.0, img: "/Assets/images/shirt-2.png" },
-  { name: "pant double tap",       price: 1300, rating: 3.5, img: "/Assets/images/pant-1.png" },
-  { name: "shirt with style",      price: 1100, rating: 5.0, img: "/Assets/images/shirt-3.png" },
+  { name: "shirt With double tap", price: 1400, rating: 4.5, img: "./Assets/images/shirt1.png" },
+  { name: "shirt with blackcolor", price: 1420, rating: 4.0, img: "./Assets/images/shirt-2.png" },
+  { name: "pant double tap",       price: 1300, rating: 3.5, img: "./Assets/images/pant-1.png" },
+  { name: "shirt with style",      price: 1100, rating: 5.0, img: "./Assets/images/shirt-3.png" },
 ];
 
 const container = document.querySelector(".item-box5");
@@ -49,10 +49,10 @@ productsLine1.forEach((productsLine1) => {
   container.appendChild(card);
 });
 const productsLine2 = [
-  { name: "shirt With double tap", price: 1400, rating: 4.5, img: "/Assets/images/shirt-3.png" },
-  { name: "pant with blackcolor", price: 1420, rating: 4.0, img: "/Assets/images/pant-1.png" },
-  { name: "pant double tap",       price: 1300, rating: 3.5, img: "/Assets/images/pant-2.png" },
-  { name: "shirt with style",      price: 1100, rating: 5.0, img: "/Assets/images/shirt-4.png" },
+  { name: "shirt With double tap", price: 1400, rating: 4.5, img: "./Assets/images/shirt-3.png" },
+  { name: "pant with blackcolor", price: 1420, rating: 4.0, img: "./Assets/images/pant-1.png" },
+  { name: "pant double tap",       price: 1300, rating: 3.5, img: "./Assets/images/pant-2.png" },
+  { name: "shirt with style",      price: 1100, rating: 5.0, img: "./Assets/images/shirt-4.png" },
 ];
 
 const containerTwo = document.querySelector(".item-box8");
