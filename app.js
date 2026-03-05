@@ -1,14 +1,23 @@
 console.log("Javascript connected");
-
-let userEmail = "hitesh@gmail.com";
-let userpassword = "1234";
+let userEmail = ["hitesh@gmail.com", "shahmeershahzad@gmail.com", "abc@gmail.com"];
+let userpassword = [132, 456, 123];
 let userEmailInput = document.getElementById("email");
 let userpasswordInput = document.getElementById("password");
 
 function btnfn() {
   let userEmailValue = userEmailInput.value;
-  let userpasswordValue = userpasswordInput.value;
-  if (userEmailValue == userEmail && userpasswordValue === userpassword) {
+  let userpasswordValue = Number(userpasswordInput.value); 
+  
+  let loginSuccess = false; 
+
+  for (let i = 0; i < userEmail.length; i++) {  
+    if (userEmailValue == userEmail[i] && userpasswordValue === userpassword[i]) {
+      loginSuccess = true; 
+      break;
+    }
+  }
+
+  if (loginSuccess) {
     window.location.href = "home.html";
   } else {
     alert("invalid password");
