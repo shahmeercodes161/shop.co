@@ -9,7 +9,7 @@ function btnfn() {
   let userEmailValue = userEmailInput.value;
   let userpasswordValue = userpasswordInput.value;
   if (userEmailValue == userEmail && userpasswordValue === userpassword) {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   } else {
     alert("invalid password");
   }
@@ -79,5 +79,5 @@ productsLine2.forEach((productsLine2) => {
   card.appendChild(stars);
   card.appendChild(price);
 
-  container.appendChild(card);
+  containerTwo.appendChild(card);
 });
